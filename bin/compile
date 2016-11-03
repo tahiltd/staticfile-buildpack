@@ -9,6 +9,7 @@ set -o pipefail   # do not ignore exit codes when piping output
 build_dir=$1
 cache_dir=$2
 
+echo "kia ora koe! from the compile script"
 compile_buildpack_dir=$(cd $(dirname $0); cd ..; pwd)
 compile_buildpack_bin=$compile_buildpack_dir/bin
 $compile_buildpack_dir/compile-extensions/bin/check_stack_support
